@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="batch2">
+	  <groups>
+		  <run>
+			<!--  <include name="smoke">
+				  
+			  </include>-->
+			  <exclude name="smoke">
+				  
+			  </exclude>
+			  
+		  </run>
+	  </groups>
+    <classes>
+      <class name="Data_driven_testing.Kawasai"/>
+      <class name="Data_driven_testing.Puma"/>
+      <class name="Data_driven_testing.Honda"/>
+      <class name="Data_driven_testing.Adidas"/>
+      <class name="Data_driven_testing.Nike"/>
+      <class name="Data_driven_testing.Royalenfield"/>
+    </classes>
+  </test> <!-- batch2 -->
+</suite> <!-- Suite -->
